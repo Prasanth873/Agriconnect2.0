@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduConnect - Education Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>🎓 EduConnect</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#resources">Resources</a>
+    <a href="#account">Login</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Your Learning Journey Starts Here!</h1>
+  <p>Learn, Explore and Grow with EduConnect.</p>
+  <a href="#resources"><button>Explore Resources</button></a>
+</section>
+
+<section class="about">
+  <h2>About EduConnect</h2>
+  <p>A smart community education portal providing study materials,
+  scholarships, career guidance and digital learning opportunities.</p>
+</section>
+
+<section id="resources">
+  <h2>Educational Resources</h2>
+  <input id="search" placeholder="Search resources...">
+  <div class="cards" id="resourceCards">
+    <p>Loading resources...</p>
+  </div>
+</section>
+
+<section id="account">
+  <h2>Student Account</h2>
+  <div class="account-box">
+    <h3>Register</h3>
+    <input id="regName" placeholder="Full Name">
+    <input id="regEmail" type="email" placeholder="Email">
+    <input id="regPassword" type="password" placeholder="Password (8+ characters)">
+    <button onclick="register()">Register</button>
+  </div>
+
+  <div class="account-box">
+    <h3>Login</h3>
+    <input id="loginEmail" type="email" placeholder="Email">
+    <input id="loginPassword" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="studentArea" class="account-box" hidden>
+    <h3>Welcome, <span id="studentName"></span>!</h3>
+    <button onclick="showDoubts()">My Doubts</button>
+    <button onclick="logout()">Logout</button>
+    <textarea id="question" placeholder="Enter your academic doubt"></textarea>
+    <button onclick="submitDoubt()">Submit Doubt</button>
+    <div id="myDoubts"></div>
+  </div>
+
+  <p id="message"></p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: educonnect@gmail.com</p>
+  <p>Learn Today, Lead Tomorrow!</p>
+</section>
+
+<footer>
+  <h3>🎓 EduConnect</h3>
+  <p>Smart Community Education Support Portal</p>
+  <p>© 2026 EduConnect. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
